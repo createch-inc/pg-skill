@@ -4,26 +4,47 @@
 
 ### 試験用リポジトリをクローン
 ```
-$ https://github.com/createch-inc/pg-skill.git
+$ git clone https://github.com/createch-inc/pg-skill.git
 ```
 
 ### Dockerイメージのビルドと起動  
 
 ```
+$ cd pg-skill
 $ docker-compose build
 $ docker-compose up -d
 ```
 
-## MySQL登録ユーザー
+## DB(MySQL)について
+### テーブル構造 
+下記ファイルには、テーブル作成や初期データ投入のためのSQLが記載されている
+
+```
+/your/env/path/to/pg-skill/db/initdb.d/pg-skill.sql
+```
+
+### DBのユーザ情報
 
 | ユーザー名 | パスワード |
 | ---- | ---- |
 | root | pw |
 
-### PHPライブラリのインストール  
+### DBコンテナ内でコマンドを実行したい場合
 
 ```
-$ docker-compose exec php composer install
+$ docker exec -it pg-skill_db_1 sh
+# mysql -u root -p
+mysql>
+```
+
+## フレームワークを利用する場合  
+
+フレームワークは何を利用しても良い。CakePHPの場合は、以下の方法でインストールできる。
+
+```
+$ docker exec -it pg-skill_php_1 sh
+$ composer self-update && composer create-project --prefer-dist cakephp/a
+pp:"4.*" my_app_name 
 ```
 
 ### コンテナ停止  
@@ -31,11 +52,3 @@ $ docker-compose exec php composer install
 ```
 $ docker-compose stop
 ```
-
-[toc]
-
-## 開発用リンク  
-
-- [vBiz](http://localhost:7080/ "vBiz")
-- [phpmyadmin](http://localhost:7081 "phpmyadmin")
-- [mailhog](http://localhost:7025 "mailhog")
