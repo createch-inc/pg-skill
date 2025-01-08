@@ -1,0 +1,6 @@
+FROM mysql:latest
+COPY initdb.d /docker-entrypoint-initdb.d
+ENV TZ Asia/Tokyo
+ENV MYSQL_ROOT_PASSWORD pw 
+EXPOSE 3306
+CMD ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]

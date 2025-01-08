@@ -1,0 +1,16 @@
+FROM php:8.2.7-fpm-alpine3.18
+COPY php.ini $PHP_INI_DIR/php.ini
+ENV PATH $PATH:/var/www/app/bin
+RUN apk update && \
+    apk add --no-cache \
+        libzip-dev \
+        zip \
+        vim \
+        icu-libs \
+        icu-dev
+RUN docker-php-ext-install \
+        intl \
+        pdo_mysql \
+        zip
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+WORKDIR /var/www/app

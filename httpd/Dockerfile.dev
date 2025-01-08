@@ -1,0 +1,6 @@
+FROM httpd:latest
+ENV TZ Asia/Tokyo
+ADD vhosts.conf $HTTPD_PREFIX/conf/conf.d/
+COPY httpd.conf $HTTPD_PREFIX/conf/httpd.conf
+WORKDIR $HTTPD_PREFIX
+EXPOSE 80
