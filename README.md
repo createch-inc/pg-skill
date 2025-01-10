@@ -35,8 +35,9 @@ sample.phpには、データベースサーバに接続するサンプルコー�
 | ---- | ---- |
 | root | pw |
 
-### DBコンテナ内でコマンドを実行したい場合
+### MySQLログイン
 
+DBコンテナ内でmysqlコマンドを実行してください。
 ```
 $ docker exec -it pg-skill_db_1 sh
 # mysql -u root -p
@@ -46,7 +47,7 @@ mysql>
 ## フレームワークを利用する場合  
 
 フレームワークは何を利用しても良いです。
-例えば、CakePHPの場合は以下の方法でインストールできる。
+例えば、CakePHPの場合は以下の方法でインストールできます。
 
 ```
 $ docker exec -it pg-skill_php_1 sh
