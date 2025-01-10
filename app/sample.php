@@ -1,5 +1,5 @@
 <?php
-$dsn = 'mysql:host=pg-skill_db_1;dbname=pg-skill_db;';
+$dsn = 'mysql:host=db;dbname=pg-skill_db;';
 $db_user = 'root';
 $db_pass = 'pw';
 
