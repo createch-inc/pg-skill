@@ -4,7 +4,7 @@
 /config/.env
 /logs/*
 /tmp/*
-/vendor/*
+#/vendor/*
 
 # OS generated files #
 ######################
@@ -46,7 +46,7 @@ nbproject/*
 # Sass preprocessor
 .sass-cache/
 # node
-/node_modules/*
+#/node_modules/*
 # yarn
 yarn-debug.log
 yarn-error.log
