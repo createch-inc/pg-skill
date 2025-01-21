@@ -27,3 +27,10 @@ services:
       - 8080:80
     depends_on:
       - php
+  node:
+    build:
+      context: ./node
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./app:/app
+    tty: true
