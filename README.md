@@ -51,8 +51,7 @@ mysql>
 
 ```
 $ docker exec -it pg-skill_php_1 sh
-$ composer self-update && composer create-project --prefer-dist cakephp/a
-pp:"4.*" my_app_name 
+$ composer self-update && composer create-project --prefer-dist cakephp/app:"4.*" my_app_name 
 ```
 
 ### コンテナ停止  
