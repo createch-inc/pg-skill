@@ -29,9 +29,9 @@
             'dev_requirement' => false,
         ),
         'cakephp/bake' => array(
-            'pretty_version' => '3.2.1',
-            'version' => '3.2.1.0',
-            'reference' => 'e94334bbd5b46ffe0ea8f9388988380d833a5fa1',
+            'pretty_version' => '3.2.2',
+            'version' => '3.2.2.0',
+            'reference' => '165e2bd9cc407b0ea19f8a3b48927c10607f3963',
             'type' => 'cakephp-plugin',
             'install_path' => __DIR__ . '/../cakephp/bake',
             'aliases' => array(),

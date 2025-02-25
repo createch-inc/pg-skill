@@ -39,7 +39,7 @@ sample.phpには、データベースサーバに接続するサンプルコー�
 
 DBコンテナ内でmysqlコマンドを実行してください。
 ```
-$ docker exec -it pg-skill_db_1 sh
+$ docker exec -it pg-skill-db-1 sh
 # mysql -u root -p
 mysql>
 ```
@@ -50,9 +50,8 @@ mysql>
 例えば、CakePHPの場合は以下の方法でインストールできます。
 
 ```
-$ docker exec -it pg-skill_php_1 sh
-$ composer self-update && composer create-project --prefer-dist cakephp/a
-pp:"4.*" my_app_name 
+$ docker exec -it pg-skill-php-1 sh
+$ composer self-update && composer create-project --prefer-dist cakephp/app:"4.*" my_app_name 
 ```
 
 ### コンテナ停止  

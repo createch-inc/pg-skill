@@ -54,17 +54,17 @@
         },
         {
             "name": "cakephp/bake",
-            "version": "3.2.1",
-            "version_normalized": "3.2.1.0",
+            "version": "3.2.2",
+            "version_normalized": "3.2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/bake.git",
-                "reference": "e94334bbd5b46ffe0ea8f9388988380d833a5fa1"
+                "reference": "165e2bd9cc407b0ea19f8a3b48927c10607f3963"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/bake/zipball/e94334bbd5b46ffe0ea8f9388988380d833a5fa1",
-                "reference": "e94334bbd5b46ffe0ea8f9388988380d833a5fa1",
+                "url": "https://api.github.com/repos/cakephp/bake/zipball/165e2bd9cc407b0ea19f8a3b48927c10607f3963",
+                "reference": "165e2bd9cc407b0ea19f8a3b48927c10607f3963",
                 "shasum": ""
             },
             "require": {
@@ -79,7 +79,7 @@
                 "cakephp/debug_kit": "^5.0.0",
                 "phpunit/phpunit": "^10.5.5 || ^11.1.3"
             },
-            "time": "2024-12-24T10:08:51+00:00",
+            "time": "2025-01-17T14:18:00+00:00",
             "type": "cakephp-plugin",
             "installation-source": "dist",
             "autoload": {
